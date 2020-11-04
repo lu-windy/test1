@@ -1,0 +1,195 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^rf-(.*)": "@/components/rf/rf-$1/rf-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/startup",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/guide",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/register/index",
+			"style": {
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom",
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		}, //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/works/index",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/worksdetails/index",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/dynamic/index",
+			"style": {
+				"disableScroll": true,
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none" // 取消APP端iOS回弹,避免与下拉刷新冲突 (可统一配在 'globalStyle')
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/business/index",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/details/index",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/translate/index",
+			"style": {
+				"navigationBarTitleText": "成长",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/palace/index",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/busiessdetails/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/test/test",
+			"style": {
+				"app-plus": {
+					//去掉滚动条
+					"scrollIndicator": "none",
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/personData/personData",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/personPassword/personPassword",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#8A8A8A",
+		"selectedColor": "#00A0EA",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index/ronghe1.png",
+				"selectedIconPath": "static/index/ronghe2.png",
+				"text": "榕河"
+			},
+			{
+				"pagePath": "pages/dynamic/index",
+				"iconPath": "static/index/dynamic1.png",
+				"selectedIconPath": "static/index/dynamic2.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/business/index",
+				"iconPath": "static/index/business2.png",
+				"selectedIconPath": "static/index/business1.png",
+				"text": "业务"
+			},
+			{
+				"pagePath": "pages/works/index",
+				"iconPath": "static/index/works1.png",
+				"selectedIconPath": "static/index/works2.png",
+				"text": "作品"
+			},
+			{
+				"pagePath": "pages/translate/index",
+				"iconPath": "static/index/grow1.png",
+				"selectedIconPath": "static/index/grow2.png",
+				"text": "成长"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

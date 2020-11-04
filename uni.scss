@@ -1,0 +1,192 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * 使用的时候，请将下面的一行复制到您的uniapp项目根目录的uni.scss中即可
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+@import 'uview-ui/theme.scss';
+
+/* 页面左右间距 */
+$page-row-spacing: 30upx;
+$page-color-bg: #fff;
+$page-color-base: #f8f8f8;
+$page-color-light: #f8f6fc;
+$base-color: #fa436a;
+
+/* 文字尺寸 */
+$font-sm: 24upx;
+$font-base: 28upx;
+$font-lg: 32upx;
+/*文字颜色*/
+$font-color-dark: #303133;
+$font-color-base: #606266;
+$font-color-light: #909399;
+$font-color-disabled: #C0C4CC;
+$font-color-spec: #4399fc;
+/* 边框颜色 */
+$border-color-dark: #DCDFE6;
+$border-color-base: #E4E7ED;
+$border-color-light: #EBEEF5;
+/* 图片加载中颜色 */
+$image-bg-color: #eee;
+/* 行为相关颜色 */
+$uni-color-primary:#fa436a;
+$uni-color-success: #4cd964;
+$uni-color-warning: #f0ad4e;
+$uni-color-error: #dd524d;
+$u-main-color: #303133;
+$u-content-color: #606266;
+$u-tips-color: #909399;
+$u-light-color: #c0c4cc;
+$u-border-color: #e4e7ed;
+$u-bg-color: #f3f4f6;
+
+$u-type-primary: #2979ff;
+$u-type-primary-light: #ecf5ff;
+$u-type-primary-disabled: #a0cfff;
+$u-type-primary-dark: #2b85e4;
+
+$u-type-warning: #ff9900;
+$u-type-warning-disabled: #fcbd71;
+$u-type-warning-dark: #f29100;
+$u-type-warning-light: #fdf6ec;
+
+$u-type-success: #19be6b;
+$u-type-success-disabled: #71d5a1;
+$u-type-success-dark: #18b566;
+$u-type-success-light: #dbf1e1;
+
+$u-type-error: #fa3534;
+$u-type-error-disabled: #fab6b6;
+$u-type-error-dark: #dd6161;
+$u-type-error-light: #fef0f0;
+
+$u-type-info: #909399;
+$u-type-info-disabled: #c8c9cc;
+$u-type-info-dark: #82848a;
+$u-type-info-light: #f4f4f5;
+
+$u-form-item-height: 70rpx;
+$u-form-item-border-color: #dcdfe6;
+
+/* 文字基本颜色 */
+$uni-text-color: #333; //基本色
+$uni-text-color-inverse: #fff; //反色
+$uni-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #808080;
+$uni-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$uni-bg-color: #ffffff;
+$uni-bg-color-grey: #f8f8f8;
+$uni-bg-color-light: #F8F8F8;
+$uni-bg-color-dark: #F5F5F5;
+$uni-bg-color-hover: #f1f1f1; //点击状态颜色
+$uni-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color: #e5e5e5;
+$uni-border-color-light: #F5F5F5;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$uni-img-size-sm: 40rpx;
+$uni-img-size-base: 52rpx;
+$uni-img-size-lg: 80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #2c405a; // 文章标题颜色
+$uni-font-size-title: 40rpx;
+$uni-color-subtitle: #555555; // 二级标题颜色
+$uni-font-size-subtitle: 36rpx;
+$uni-color-paragraph: #3f536e; // 文章段落颜色
+$uni-font-size-paragraph: 30rpx;
+
+/* 行为相关颜色 */
+$qs-color-primary: #007aff;
+$qs-color-success: #4cd964;
+$qs-color-warning: #f0ad4e;
+$qs-color-error: #dd524d;
+
+/* 文字基本颜色 */
+$qs-text-color: #333; //基本色
+$qs-text-color-inverse: #fff; //反色
+$qs-text-color-grey: #999; //辅助灰色，如加载更多的提示信息
+$qs-text-color-placeholder: #808080;
+$qs-text-color-disable: #c0c0c0;
+
+/* 背景颜色 */
+$qs-bg-color: #FFFFFF;
+$qs-bg-color-light: #F8F8F8;
+$qs-bg-color-dark: #F5F5F5;
+$qs-bg-color-hover: #f1f1f1; //点击状态颜色
+$qs-bg-color-mask: rgba(0, 0, 0, 0.4); //遮罩颜色
+
+/* 边框颜色 */
+$qs-border-color: #c8c7cc;
+$qs-border-color-light: #F5F5F5;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$qs-font-size-sm: 24rpx;
+$qs-font-size-base: 28rpx;
+$qs-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$qs-img-size-sm: 40rpx;
+$qs-img-size-base: 52rpx;
+$qs-img-size-lg: 80rpx;
+
+/* Border Radius */
+$qs-border-radius-sm: 4rpx;
+$qs-border-radius-base: 6rpx;
+$qs-border-radius-lg: 12rpx;
+$qs-border-radius-circle: 50%;
+
+/* 水平间距 */
+$qs-spacing-row-sm: 10px;
+$qs-spacing-row-base: 20rpx;
+$qs-spacing-row-lg: 30rpx;
+
+$spacing-row-size: (
+	0: 0,
+	sm: $qs-spacing-row-sm,
+	md: $qs-spacing-row-base,
+	lg: $qs-spacing-row-lg
+);
+
+/* 垂直间距 */
+$qs-spacing-col-sm: 8rpx;
+$qs-spacing-col-base: 16rpx;
+$qs-spacing-col-lg: 24rpx;
+$spacing-col-size: (
+	0: 0,
+	sm: $qs-spacing-col-sm,
+	md: $qs-spacing-col-base,
+	lg: $qs-spacing-col-lg
+);
